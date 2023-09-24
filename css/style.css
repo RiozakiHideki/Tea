@@ -81,7 +81,7 @@ body {
   width: 100%;
 
   height: 7960px;
-  background: url(/img/bg-img.png), lightgray 50% / cover no-repeat;
+  background-image: url(/img/bg-img.png), lightgray 50% / cover no-repeat;
   font-weight: 400;
   color: #bfd601;
   overflow-x: hidden;
