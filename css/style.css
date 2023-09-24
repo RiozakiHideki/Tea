@@ -76,10 +76,12 @@ hr {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  display: block;
+  margin: 0 auto;
+  padding: 0 auto;
   width: 100%;
-
+  min-width: 420px;
+  max-width: 1500px;
   height: 7960px;
   background: url(/img/bg-img.png), lightgray 50% / cover no-repeat;
   font-weight: 400;
@@ -100,7 +102,7 @@ header {
 }
 
 .input_header {
-  margin-right: -28px;
+  /* margin-right: -28px; */
   width: 200px;
   border: 0;
   background-color: transparent;
@@ -627,9 +629,16 @@ header {
   background-color: rgba(191, 164, 77, 0.7);
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (max-width: 1500px) {
   body {
     margin: 0 auto;
-    max-width: 1500px;
+    min-width: 1500px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  body {
+    margin: 0 auto;
+    overflow-x: scroll;
   }
 }
